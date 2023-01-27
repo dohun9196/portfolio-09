@@ -1,0 +1,85 @@
+#footer {
+    padding: 30px 0 50px 0;
+
+    background: #222;
+    color: #c1c1c1;
+
+    font-size: 14px;
+}
+
+#footer .f_top {
+    border-bottom: 1px solid#888;
+    padding: 0 0 30px 0;
+}
+
+#footer .f_top ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#footer .f_add {
+    padding: 50px 0 10px 0;
+}
+
+#footer .f_add address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .f_add address span {
+    line-height: 1.5;
+    display: inline-block;
+}
+
+#footer .f_add address span~span::before {
+    content: "";
+    display: inline-block;
+
+    width: 1px;
+    height: 10px;
+
+    background: #555;
+
+    margin: 0 15px 0 15px;
+
+}
+
+#footer .f_add address span:nth-child(6)::before {
+    content: none;
+}
+
+#footer .f_bot {
+    text-align: center;
+}
+
+#footer .f_bot .copy {
+    text-align: left;
+
+}
+
+/* 상단위치 이동 버튼 */
+
+#top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#top_btn a {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+#top_btn a.on {
+    display: block;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/main_page/next-arrow.png)no-repeat center center/cover;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
