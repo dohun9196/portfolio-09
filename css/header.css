@@ -45,15 +45,17 @@
     display: block;
     font-size: 19px;
     font-weight: 700;
+
+    letter-spacing: 1.5px;
+    transition: 0.4s;
 }
 
-#header.top .gnb>ul>li:nth-child(2) .menu_wrap .h_drop {
+#header .gnb>ul>li>a:hover {
+    color: #8a7854;
+}
+
+/* #header.top .gnb>ul>li:nth-child(2) .menu_wrap .h_drop {
     transform: translate(100px, 0);
-}
-
-#header .gnb>ul>li a {
-    display: block;
-    text-align: center;
 }
 
 #header .gnb>ul>li .menu_wrap {
@@ -102,14 +104,22 @@
 
 #header .gnb>ul>li:nth-child(4) .h_drop {
     justify-content: flex-end;
-}
+} */
 
-#header .link {
-    display: flex;
-    gap: 10px;
-}
+#header .bar {}
 
-#header .link a {
+#header .bar a {
     display: block;
     line-height: 90px;
+
+}
+
+#header .bar i {
+    font-size: 25px;
+    font-weight: 900;
+    transform: 0.7s;
+}
+
+#header .bar i:hover {
+    color: #8a7854;
 }

@@ -1,7 +1,7 @@
 $(function () {
     $('.mainVisual .main_slide').slick({
-        dots: false,
-        autoplay: true,
+        dots: true,
+        autoplay: false,
         arrows: false,
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -53,9 +53,9 @@ $(function () {
 
     $(window).scroll(function () {
         var height = $(document).scrollTop();
-        if (height > 500) {
+        if (height > 950) {
             $('#top_btn a').addClass('on');
-        } else if (height < 500) {
+        } else if (height < 950) {
             $('#top_btn a').removeClass('on');
         }
 

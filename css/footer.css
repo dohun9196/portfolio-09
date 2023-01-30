@@ -1,53 +1,95 @@
 #footer {
-    padding: 30px 0 50px 0;
+    padding: 50px 0;
 
     background: #222;
-    color: #c1c1c1;
+    color: #a2a2a2;
 
     font-size: 14px;
 }
 
-#footer .f_top {
-    border-bottom: 1px solid#888;
-    padding: 0 0 30px 0;
+#footer .flex_inner {
+    justify-content: space-between;
 }
 
-#footer .f_top ul {
-    width: 1200px;
-    margin: 0 auto;
+#footer .f_right .f_tel i {
+    margin: 0 10px 0 0;
+}
+
+#footer .f_right .f_tel strong {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+    margin: 0 0 30px 0;
+    letter-spacing: 2px;
+}
+
+#footer .f_right .f_tel b {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer .f_right .f_sns {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#footer .f_right .f_sns img {
+    width: 30px;
+    height: 30px;
+}
+
+#footer .inner .f_logo {
+    display: block;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#footer .f_left ul {
+
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-#footer .f_add {
-    padding: 50px 0 10px 0;
+#footer .f_left ul>li>a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 30px 0;
+    transition: 0.5s;
 }
 
-#footer .f_add address {
-    display: flex;
-    flex-wrap: wrap;
+#footer .f_left ul>li>a:hover {
+    color: #edab14;
 }
 
-#footer .f_add address span {
+
+#footer .f_left address {
+    margin: 0 0 30px 0;
+}
+
+#footer .f_left address span {
     line-height: 1.5;
     display: inline-block;
 }
 
-#footer .f_add address span~span::before {
+#footer .f_left address span~span::before {
     content: "";
     display: inline-block;
 
     width: 1px;
     height: 10px;
 
-    background: #555;
+    background: #fff;
 
-    margin: 0 15px 0 15px;
+    margin: 0 15px;
 
 }
 
-#footer .f_add address span:nth-child(6)::before {
+#footer .f_left address span:nth-child(6)::before {
     content: none;
 }
 
@@ -66,20 +108,27 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+
 }
 
 #top_btn a {
-    width: 0;
-    height: 0;
+    display: block;
     font-size: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#top_btn img {
+    transition: 0.4s;
+}
+
+#top_btn a:hover img {
+    transform: scale(1.1);
 }
 
 #top_btn a.on {
-    display: block;
-    font-size: 0;
-    width: 60px;
-    height: 60px;
-    background: url(../img/main_page/next-arrow.png)no-repeat center center/cover;
-    transform: rotate(-90deg);
-    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
 }
