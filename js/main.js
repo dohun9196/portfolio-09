@@ -1,4 +1,5 @@
 $(function () {
+    // 메인페이지
     $('.mainVisual .main_slide').slick({
         dots: true,
         autoplay: false,
@@ -18,13 +19,13 @@ $(function () {
         slidesToScroll: 1,
         autoplay: false,
     });
+
     $('.mainOpen .open_slide').slick({
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
     });
-
 
     $('#header').hover(function () {
         $('#header').addClass('top');
@@ -60,5 +61,15 @@ $(function () {
         }
 
     });
+
+    // 브랜드페이지 
+
+
+    $('.story_mascot .mas_slide').slick({
+        dots: true,
+        arrows: true,
+        autoplay: false,
+    });
+
 });
 

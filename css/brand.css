@@ -72,7 +72,9 @@
 /* 브랜드 네비 공용 } */
 
 
-
+.subStory {
+    padding: 100px 0 0 0;
+}
 
 
 /* { Food */
@@ -245,3 +247,240 @@
 }
 
 /* people } */
+
+
+
+
+
+/* { attitude */
+.story_attitude {
+    position: relative;
+    padding: 0 0 100px 0;
+}
+
+.story_attitude::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.story_attitude .inner .top h2 {
+    font-family: 'Song Myung', serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.story_attitude .inner .left {
+    width: 48%;
+    float: left;
+}
+
+.story_attitude .inner .left .story_tit {
+    font-family: 'Song Myung', serif;
+    font-size: 90px;
+    font-weight: 900;
+    margin: 0 0 50px 0;
+}
+
+.story_attitude .inner .left b {
+    display: block;
+    font-family: 'Song Myung', serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 50px 0;
+}
+
+.story_attitude .inner .left .story_text {
+    margin: 0 0 50px 0;
+}
+
+.story_attitude .inner .left .story_text span {
+    display: block;
+    line-height: 1.5;
+    color: #888;
+}
+
+.story_attitude .inner .left p {
+
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+.story_attitude .inner .right {
+    width: 48%;
+    float: right;
+}
+
+.story_attitude .right .food_img {
+    background: url(../img/sub/brand01_img04.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+.story_attitude .attitude_bg::after {
+    content: "";
+    position: absolute;
+    background: url(../img/sub/brand01_bg02.png) no-repeat center center/cover;
+    top: -50px;
+    right: 0;
+    display: block;
+    width: 92%;
+    height: 600px;
+    z-index: -1;
+}
+
+/* attitude } */
+
+
+
+
+
+/* { story_mascot */
+.story_mascot {
+    padding: 50px 0 0 0;
+}
+
+.story_mascot .inner .mas_tit {
+    text-align: center;
+    margin: 0 0 100px 0;
+}
+
+.story_mascot .mas_slide {
+    position: relative;
+}
+
+.story_mascot .mas_slide div {
+    height: 500px;
+    font-size: 0;
+}
+
+/* .story_mascot .mas_slide figure:nth-child(1) {
+    background: url(../img/sub/brand01_slide01.png) no-repeat center center/cover;
+}
+
+.story_mascot .mas_slide figure:nth-child(2) {
+    background: url(../img/sub/brand01_slide02.png) no-repeat center center/cover;
+}
+
+.story_mascot .mas_slide figure:nth-child(3) {
+    background: url(../img/sub/brand01_slide03.png) no-repeat center center/cover;
+}
+
+.story_mascot .mas_slide figure:nth-child(4) {
+    background: url(../img/sub/brand01_slide04.png) no-repeat center center/cover;
+}
+
+.story_mascot .mas_slide figure:nth-child(5) {
+    background: url(../img/sub/brand01_slide05.png) no-repeat center center/cover;
+} 
+
+nth-child(1),(5)번 안먹힘
+*/
+
+.story_mascot .mas_slide .slick-dots {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.story_mascot .mas_slide .slick-dots li {
+    position: relative;
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    margin: 0 5px 0 0;
+    background: transparent;
+
+    font-size: 0;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+.story_mascot .mas_slide .slick-dots li:last-child {
+    margin: 0;
+}
+
+.story_mascot .mas_slide .slick-dots li button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+}
+
+.story_mascot .mas_slide .slick-dots li.slick-active button {
+    background: #888;
+}
+
+
+.story_mascot .mas_slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.story_mascot .mas_slide .slick-prev {
+    left: 20%;
+}
+
+.story_mascot .mas_slide .slick-prev::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(45deg);
+    width: 15px;
+    height: 15px;
+
+    border-left: 4px solid#bbb;
+    border-bottom: 4px solid#bbb;
+}
+
+.story_mascot .mas_slide .slick-next {
+    left: 80%;
+}
+
+.story_mascot .mas_slide .slick-next::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(45deg);
+    width: 15px;
+    height: 15px;
+
+    border-right: 4px solid#bbb;
+    border-top: 4px solid#bbb;
+}
+
+
+.story_mascot .mas_bottom {}
+
+/* story_mascot } */
