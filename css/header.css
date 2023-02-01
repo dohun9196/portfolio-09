@@ -118,6 +118,7 @@
     font-size: 25px;
     font-weight: 900;
     transform: 0.7s;
+    line-height: 90px;
 }
 
 #header .bar i:hover {

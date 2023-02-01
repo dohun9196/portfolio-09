@@ -57,6 +57,7 @@
 }
 
 .mainVisual .main_slide figure b {
+    display: inline;
     font-size: 60px;
     font-weight: 900;
     font-family: 'Song Myung', serif;
@@ -64,6 +65,7 @@
 }
 
 .mainVisual .main_slide figure strong {
+    display: inline;
     font-family: 'Song Myung', serif;
     font-size: 70px;
     font-weight: 900;

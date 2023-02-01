@@ -7,6 +7,10 @@
 }
 
 .brandNav .inner {
+    display: none;
+}
+
+.brandNav .inner.on {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,7 +18,7 @@
     text-align: center;
 }
 
-.brandNav .inner h2 {
+.brandNav .inner.on h2 {
     font-family: 'Song Myung', serif;
     font-size: 50px;
     font-weight: 900;
@@ -22,43 +26,47 @@
     margin: 0 0 20px 0;
 }
 
-.brandNav .inner p {
+.brandNav .inner.on p {
     font-size: 18px;
     font-weight: 300;
     color: #fff;
 }
 
 .brandNav .b_nav {
+    display: none;
+}
+
+.brandNav .b_nav.on {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-.brandNav .b_nav ul {
+.brandNav .b_nav.on ul {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.brandNav .b_nav ul>li {
+.brandNav .b_nav.on ul>li {
     background: rgba(0, 0, 0, 0.5);
     transition: 0.4s;
 }
 
-.brandNav .b_nav ul>li:hover {
+.brandNav .b_nav.on ul>li:hover {
     background: rgba(221, 173, 76, 0.9);
 }
 
-.brandNav .b_nav ul>li.on {
+.brandNav .b_nav.on ul>li.on {
     background: #fff;
 }
 
-.brandNav .b_nav ul>li.on a {
+.brandNav .b_nav.on ul>li.on a {
     color: #333;
 }
 
-.brandNav .b_nav ul>li>a {
+.brandNav .b_nav.on ul>li>a {
     display: block;
     text-align: center;
     font-size: 20px;
